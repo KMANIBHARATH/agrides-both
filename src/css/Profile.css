@@ -1,0 +1,41 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('/assets/profile-bg.jpg') no-repeat center center/cover;
+}
+
+.profile-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.profile-box h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.profile-box p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.funds-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.funds-btn:hover {
+  background-color: #218838;
+}

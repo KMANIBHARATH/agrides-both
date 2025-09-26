@@ -1,0 +1,145 @@
+/* Base Styles for LiveTracking Page */
+/* Container - Centers the content on all screen sizes */
+.tracking-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure full screen height */
+  width: 100vw;       /* Full viewport width */
+  padding: 20px;
+  box-sizing: border-box; /* Prevent horizontal scroll */
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+/* Tracking Box - Content Container */
+.tracking-box {
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px; /* Adjusted for better layout */
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Title */
+.tracking-title {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Status Text */
+.status-section {
+  margin-bottom: 20px;
+}
+
+.status-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.eta-text {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Map Image */
+.map-wrapper {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Contact Driver Button */
+.driver-contact-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.driver-contact-button:hover {
+  background-color: #218838;
+}
+.driver-details {
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+  .tracking-title {
+    font-size: 26px;
+  }
+
+  .status-text {
+    font-size: 20px;
+  }
+
+  .eta-text {
+    font-size: 18px;
+  }
+
+  .map-wrapper {
+    height: 250px; /* Adjust map image size */
+  }
+
+  .driver-contact-button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tracking-box {
+    padding: 20px;
+  }
+
+  .tracking-title {
+    font-size: 22px;
+  }
+
+  .status-text {
+    font-size: 18px;
+  }
+
+  .eta-text {
+    font-size: 16px;
+  }
+
+  .map-wrapper {
+    height: 200px; /* Adjust map size for smaller screens */
+  }
+
+  .driver-contact-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
